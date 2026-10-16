@@ -1,0 +1,20 @@
+#pragma once
+
+
+namespace AzyEngine::Core
+{
+	class WindowMessageHandler
+	{
+	public:
+		using Callback = LRESULT(CALLBACK*)(HWND, UINT, WPARAM, LPARAM);
+
+		void Hook(HWND windoe, Callback cb);
+		void UnHook();
+
+		LRESULT ForwardMessage(HWND window, UINT msg, WPARAM wParam, LPARAM lParam);
+
+	private:
+		HWND mWindow = nullptr;
+		Callback mPreviousCallbadck = nullptr;
+	};
+}

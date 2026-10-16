@@ -11,6 +11,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Framework", "Framework", "{
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Core", "Framework\Core\Core.vcxproj", "{4110C103-7AD8-46DE-B134-17D52C922052}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "VGP242", "VGP242", "{7A6E0EE1-D284-46B7-83FA-70F1552F2705}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01_HelloWindow", "VGP242\01_HelloWindow\01_HelloWindow.vcxproj", "{32DB7099-C381-4362-96BE-5DB8E6EE0FB6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -35,6 +39,14 @@ Global
 		{4110C103-7AD8-46DE-B134-17D52C922052}.Release|x64.Build.0 = Release|x64
 		{4110C103-7AD8-46DE-B134-17D52C922052}.Release|x86.ActiveCfg = Release|Win32
 		{4110C103-7AD8-46DE-B134-17D52C922052}.Release|x86.Build.0 = Release|Win32
+		{32DB7099-C381-4362-96BE-5DB8E6EE0FB6}.Debug|x64.ActiveCfg = Debug|x64
+		{32DB7099-C381-4362-96BE-5DB8E6EE0FB6}.Debug|x64.Build.0 = Debug|x64
+		{32DB7099-C381-4362-96BE-5DB8E6EE0FB6}.Debug|x86.ActiveCfg = Debug|Win32
+		{32DB7099-C381-4362-96BE-5DB8E6EE0FB6}.Debug|x86.Build.0 = Debug|Win32
+		{32DB7099-C381-4362-96BE-5DB8E6EE0FB6}.Release|x64.ActiveCfg = Release|x64
+		{32DB7099-C381-4362-96BE-5DB8E6EE0FB6}.Release|x64.Build.0 = Release|x64
+		{32DB7099-C381-4362-96BE-5DB8E6EE0FB6}.Release|x86.ActiveCfg = Release|Win32
+		{32DB7099-C381-4362-96BE-5DB8E6EE0FB6}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -42,6 +54,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{88034822-100E-4341-8A7C-A14917DEE11C} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{4110C103-7AD8-46DE-B134-17D52C922052} = {29BE3951-F889-4C07-A734-7A38B4CD5F20}
+		{32DB7099-C381-4362-96BE-5DB8E6EE0FB6} = {7A6E0EE1-D284-46B7-83FA-70F1552F2705}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EFDF6B11-91E4-45A7-B9F8-0792738DC27C}
