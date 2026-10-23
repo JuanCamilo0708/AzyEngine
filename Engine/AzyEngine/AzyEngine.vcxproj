@@ -20,6 +20,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Inc\App.h" />
+    <ClInclude Include="Inc\AppState.h" />
     <ClInclude Include="Inc\AzyEngine.h" />
     <ClInclude Include="Inc\Common.h" />
     <ClInclude Include="Src\Precompiled.h" />
@@ -33,6 +34,12 @@
   <ItemGroup>
     <ProjectReference Include="..\..\Framework\Core\Core.vcxproj">
       <Project>{4110c103-7ad8-46de-b134-17d52c922052}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Framework\Graphics\Graphics.vcxproj">
+      <Project>{62600a2c-4a1a-4e12-94fb-09b113ef3dfd}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Framework\Math\Math.vcxproj">
+      <Project>{a4bdc67a-495e-4134-87cb-bff072858cdd}</Project>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup Label="Globals">
