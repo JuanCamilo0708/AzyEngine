@@ -28,7 +28,7 @@ namespace AzyEngine
 				if (mCurrentState == nullptr)
 				{
 					LOG("App: Current state %s", stateName.c_str());
-					mCurrentState = ptr.get;
+					mCurrentState = ptr.get();
 				}
 			}
 		}

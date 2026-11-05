@@ -8,7 +8,7 @@ void AzyEngine::Core::WindowMessageHandler::Hook(HWND window, Callback cb)
 {
 	mWindow = window;
 	mPreviousCallbadck = (Callback)GetWindowLongPtrA(window, GWLP_WNDPROC);
-	SetWindowLongA(window, GWLP_WNDPROC, (LONG_PTR)cb);
+	SetWindowLongPtrA(window, GWLP_WNDPROC, (LONG_PTR)cb);
 
 }
 

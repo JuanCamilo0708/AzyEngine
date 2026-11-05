@@ -5,6 +5,7 @@
 using namespace AzyEngine;
 using namespace AzyEngine::Core;
 using namespace AzyEngine::Graphics;
+using namespace AzyEngine::Input;
 
 void App::Run(const AppConfig& config)
 {
@@ -19,26 +20,55 @@ void App::Run(const AppConfig& config)
 	);
 	auto handle = myWindow.GetWindowHandle();
 	GraphicsSystem::StaticInitialize(handle, false);
+	InputSystem::StaticInitialize(handle);
 	//initialize starting state
+	ASSERT(mCurrentState != nullptr, "App: no state is set");
+	mCurrentState->Initialize();
 
-	//updated
+	InputSystem* input = InputSystem::Get();
+
+	//updates
 	mIsRunning = true;
 	while (mIsRunning)
 	{
 		myWindow.ProcessMessage();
+		input->Update();
 		//updating all that needs updates
 
-		if (!myWindow.IsActive())
+		if (!myWindow.IsActive() || input->IsKeyPressed(KeyCode::ESCAPE))
 		{
 			Quit();
 			continue;
 		}
+		if (mNextState != nullptr)
+		{
+			mCurrentState->Terminate();
+			mCurrentState = std::exchange(mNextState, nullptr);
+			mCurrentState->Initialize();
+		}
+
+		float deltaTime = TimeUtil::GetDeltaTime();
+
+#if defined(_DEBUG)
+		if (deltaTime > 0.5f)
+		{
+			continue;
+		}
+#endif
+		mCurrentState->Update(deltaTime);
+		
+		GraphicsSystem* gs = GraphicsSystem::Get();
+		gs->BeginRender();
+			mCurrentState->Render();
+			mCurrentState->DebugUI();
+		gs->EndRender();
 
 	}
 	LOG("App Is Terminating");	
 	// terminate last state
 
 	//terminate all singletons and window (StaticTerminate)
+	InputSystem::StaticTerminate();
 	GraphicsSystem::StaticTerminate();
 	myWindow.Terminate();
 }

@@ -4,3 +4,9 @@
 
 #include "App.h"
 #include "AppState.h"
+
+
+namespace AzyEngine
+{
+	App& MainApp();
+}
