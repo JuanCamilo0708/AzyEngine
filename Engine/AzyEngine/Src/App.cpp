@@ -66,6 +66,7 @@ void App::Run(const AppConfig& config)
 	}
 	LOG("App Is Terminating");	
 	// terminate last state
+	mCurrentState->Terminate();
 
 	//terminate all singletons and window (StaticTerminate)
 	InputSystem::StaticTerminate();

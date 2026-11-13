@@ -33,9 +33,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shaders", "Shaders", "{508B
 	ProjectSection(SolutionItems) = preProject
 		Assets\Shaders\DoColor.fx = Assets\Shaders\DoColor.fx
 		Assets\Shaders\DoSomething.fx = Assets\Shaders\DoSomething.fx
+		Assets\Shaders\DoTransform.fx = Assets\Shaders\DoTransform.fx
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "03_HelloShapes", "VGP242\03_HelloShapes\03_HelloShapes.vcxproj", "{C350B6C0-4B24-4D4B-9D2A-81DC9D80E8D5}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "04_HelloCube", "VGP242\04_HelloCube\04_HelloCube.vcxproj", "{F14EC883-30CC-4FA0-AD30-4A1A8277BDAA}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "05_HelloMeshBuilder", "VGP242\05_HelloMeshBuilder\05_HelloMeshBuilder.vcxproj", "{4625730B-AED2-4AA3-A44C-FDF79D913636}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -117,6 +122,22 @@ Global
 		{C350B6C0-4B24-4D4B-9D2A-81DC9D80E8D5}.Release|x64.Build.0 = Release|x64
 		{C350B6C0-4B24-4D4B-9D2A-81DC9D80E8D5}.Release|x86.ActiveCfg = Release|Win32
 		{C350B6C0-4B24-4D4B-9D2A-81DC9D80E8D5}.Release|x86.Build.0 = Release|Win32
+		{F14EC883-30CC-4FA0-AD30-4A1A8277BDAA}.Debug|x64.ActiveCfg = Debug|x64
+		{F14EC883-30CC-4FA0-AD30-4A1A8277BDAA}.Debug|x64.Build.0 = Debug|x64
+		{F14EC883-30CC-4FA0-AD30-4A1A8277BDAA}.Debug|x86.ActiveCfg = Debug|Win32
+		{F14EC883-30CC-4FA0-AD30-4A1A8277BDAA}.Debug|x86.Build.0 = Debug|Win32
+		{F14EC883-30CC-4FA0-AD30-4A1A8277BDAA}.Release|x64.ActiveCfg = Release|x64
+		{F14EC883-30CC-4FA0-AD30-4A1A8277BDAA}.Release|x64.Build.0 = Release|x64
+		{F14EC883-30CC-4FA0-AD30-4A1A8277BDAA}.Release|x86.ActiveCfg = Release|Win32
+		{F14EC883-30CC-4FA0-AD30-4A1A8277BDAA}.Release|x86.Build.0 = Release|Win32
+		{4625730B-AED2-4AA3-A44C-FDF79D913636}.Debug|x64.ActiveCfg = Debug|x64
+		{4625730B-AED2-4AA3-A44C-FDF79D913636}.Debug|x64.Build.0 = Debug|x64
+		{4625730B-AED2-4AA3-A44C-FDF79D913636}.Debug|x86.ActiveCfg = Debug|Win32
+		{4625730B-AED2-4AA3-A44C-FDF79D913636}.Debug|x86.Build.0 = Debug|Win32
+		{4625730B-AED2-4AA3-A44C-FDF79D913636}.Release|x64.ActiveCfg = Release|x64
+		{4625730B-AED2-4AA3-A44C-FDF79D913636}.Release|x64.Build.0 = Release|x64
+		{4625730B-AED2-4AA3-A44C-FDF79D913636}.Release|x86.ActiveCfg = Release|Win32
+		{4625730B-AED2-4AA3-A44C-FDF79D913636}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -132,6 +153,8 @@ Global
 		{F09CEECB-5448-40BF-9B1E-EE22D5CECACC} = {7A6E0EE1-D284-46B7-83FA-70F1552F2705}
 		{508B0248-552A-4906-B9E9-852657CE8228} = {FDA656FD-D636-42FA-9545-9B7E5FEECD9F}
 		{C350B6C0-4B24-4D4B-9D2A-81DC9D80E8D5} = {7A6E0EE1-D284-46B7-83FA-70F1552F2705}
+		{F14EC883-30CC-4FA0-AD30-4A1A8277BDAA} = {7A6E0EE1-D284-46B7-83FA-70F1552F2705}
+		{4625730B-AED2-4AA3-A44C-FDF79D913636} = {7A6E0EE1-D284-46B7-83FA-70F1552F2705}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EFDF6B11-91E4-45A7-B9F8-0792738DC27C}

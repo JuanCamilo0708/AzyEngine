@@ -4,11 +4,11 @@ using namespace AzyEngine::Input;
 void DoColorState::Initialize()
 {
 	// create a shape
-	mVertices.push_back({ {  0.65f, 0.375f, 0.0f} ,Colors::Magenta });
+	mVertices.push_back({ {  0.65f, 0.375f, 0.0f} ,Colors::Red });
 	mVertices.push_back({ {  0.0f, 0.0f, 0.0f }  ,Colors::White });
-	mVertices.push_back({ {  0.0f, 0.75f, 0.0f }  ,Colors::Red });
+	mVertices.push_back({ {  0.0f, 0.75f, 0.0f }  ,Colors::Magenta });
 
-	mVertices.push_back({ {  0.0f, 0.75f, 0.0f }  ,Colors::Red });
+	mVertices.push_back({ {  0.0f, 0.75f, 0.0f }  ,Colors::Magenta });
 	mVertices.push_back({ {  0.0f, 0.0f, 0.0f }  ,Colors::White });
 	mVertices.push_back({ {  -0.65f, 0.375f, 0.0f} ,Colors::Blue });
 
@@ -26,7 +26,7 @@ void DoColorState::Initialize()
 
 	mVertices.push_back({ {  0.65f, -0.375f, 0.0f} ,Colors::Coral });
 	mVertices.push_back({ {  0.0f, 0.0f, 0.0f }  ,Colors::White });
-	mVertices.push_back({ {  0.65f, 0.375f, 0.0f} ,Colors::Magenta });
+	mVertices.push_back({ {  0.65f, 0.375f, 0.0f} ,Colors::Red });
 
 
 

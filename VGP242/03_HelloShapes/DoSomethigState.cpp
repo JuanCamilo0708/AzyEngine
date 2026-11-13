@@ -14,9 +14,9 @@ void DoSomethigState::Initialize()
 	mVertices.push_back({ { -0.33f, 0.0f, 0.0f } });
 
 
-	mVertices.push_back({ { -0.66f, 0.0f, 0.0f } });
 	mVertices.push_back({ { 0.66f, 0.0f, 0.0f } });
 	mVertices.push_back({ { 0.0f, -0.75f, 0.0f } });
+	mVertices.push_back({ { -0.66f, 0.0f, 0.0f } });
 
 
 
