@@ -7,7 +7,7 @@ using namespace AzyEngine;
 using namespace AzyEngine::Graphics;
 void PixelShader::Initialize(const std::filesystem::path& shaderPath)
 {
-	auto device = GraphicsSystem::Get()->GetDivice();
+	auto device = GraphicsSystem::Get()->GetDevice();
 
 	DWORD shaderFlags = D3DCOMPILE_ENABLE_STRICTNESS | D3DCOMPILE_DEBUG;
 	ID3DBlob* shaderBlob = nullptr;

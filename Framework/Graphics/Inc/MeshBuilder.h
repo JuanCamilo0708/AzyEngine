@@ -16,14 +16,20 @@ namespace AzyEngine::Graphics
 
 		//plane
 		static MeshPC CreatePlanePC(int numRows, int numColumns, float spacing, bool horizontal = true);
+		static MeshPX CreatePlanePX(int numRows, int numColumns, float spacing, bool horizontal = true);
 
 		//cylinder
 		static MeshPC CreateCylinderPC(int rings, int slices);
 
 		//sphere
 		static MeshPC CreateSpherePC(int rings, int slices, float radius);
+		static MeshPX CreateSpherePX(int rings, int slices, float radius);
 
 		//pyramid
 		static MeshPC CreatePyramidPC(float size);
+
+
+		// skybox
+		static MeshPX CreateSkySpherePX(int rings, int slices, float radius);
 	};
 }

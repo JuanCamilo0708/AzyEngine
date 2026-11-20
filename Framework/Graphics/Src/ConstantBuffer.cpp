@@ -12,7 +12,7 @@ ConstantBuffer::~ConstantBuffer()
 
 void ConstantBuffer::Initialize(uint32_t bufferSize)
 {
-	auto device = GraphicsSystem::Get()->GetDivice();
+	auto device = GraphicsSystem::Get()->GetDevice();
 
 	D3D11_BUFFER_DESC desc{};
 	desc.ByteWidth = bufferSize;

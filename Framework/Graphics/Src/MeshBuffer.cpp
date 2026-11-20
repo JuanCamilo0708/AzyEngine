@@ -56,7 +56,7 @@ void AzyEngine::Graphics::MeshBuffer::CreateVertexBuffer(const void* vertices, u
 	mVertexSize = vertexSize;
 	mVertexCount = vertexCount;
 	//start creating the components that communicate with GPU
-	auto device = GraphicsSystem::Get()->GetDivice();
+	auto device = GraphicsSystem::Get()->GetDevice();
 
 	//build vertex buffer
 
@@ -82,7 +82,7 @@ void MeshBuffer::CreateIndexBuffer(const void* indices, uint32_t indexCount)
 
 	mIndexCount = indexCount;
 
-	auto device = GraphicsSystem::Get()->GetDivice();
+	auto device = GraphicsSystem::Get()->GetDevice();
 
 	D3D11_BUFFER_DESC bufferDesc{};
 	bufferDesc.ByteWidth = static_cast<UINT>(indexCount) * sizeof(uint32_t);

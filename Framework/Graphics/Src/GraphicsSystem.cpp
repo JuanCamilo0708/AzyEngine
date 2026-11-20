@@ -213,7 +213,7 @@ float GraphicsSystem::GetBackBufferAspectRatio() const
 	return static_cast<float>(GetBackBufferWidth()) / static_cast<float>(GetBackBufferHeight());
 }
 
-ID3D11Device* GraphicsSystem::GetDivice()
+ID3D11Device* GraphicsSystem::GetDevice()
 {
 	return mD3DDevice;
 }

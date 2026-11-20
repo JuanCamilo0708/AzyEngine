@@ -14,7 +14,7 @@ namespace AzyEngine::Graphics
 
 	using MeshP = MeshBase<VertexP>;
 	using MeshPC = MeshBase<VertexPC>;
-	using MeshPX = MeshBase<VertexPC>;
+	using MeshPX = MeshBase<VertexPX>;
 	using Mesh = MeshBase<Vertex>;
 
 }

@@ -38,7 +38,7 @@ namespace AzyEngine::Graphics
 		uint32_t GetBackBufferHeight() const;
 		float GetBackBufferAspectRatio() const;
 
-		ID3D11Device* GetDivice();
+		ID3D11Device* GetDevice();
 
 		ID3D11DeviceContext* GetContext();
 

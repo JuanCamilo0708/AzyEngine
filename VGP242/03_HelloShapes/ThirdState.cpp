@@ -34,7 +34,7 @@ void ThirdState::Initialize()
 
 
 	//start creating the components that communicate with GPU
-	auto device = GraphicsSystem::Get()->GetDivice();
+	auto device = GraphicsSystem::Get()->GetDevice();
 
 	//build vertex buffer
 
